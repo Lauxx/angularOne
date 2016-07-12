@@ -10,11 +10,16 @@
 	</head>
 	<body ng-controller="mainControl">
 <!-- linking your controller from mainControl -->
-	<input type="text" ng-model="test">
+<!-- <input type="text" ng-model="test"> -->
 <!-- now have input field that updates test variable -->
-	{{ test }}
-	{{things}}
-
+<!-- 	{{ test }}
+		{{things}} -->
+		<div ng-repeat="tool in tools">
+<!-- tool = variable we have created in html; referencing tools = from mainControl; call in our created html variable to invoke -->
+			<h3>Name of Tool</h3>
+			<li>{{tool}}</li>
+			<p>This tool is awesome, especially for angry mobs</p>
+		</div>
 
 		
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>

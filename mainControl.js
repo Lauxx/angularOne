@@ -1,7 +1,10 @@
 angular.module("firstApp").controller("mainControl", function($scope){
+//can call in variables with $scope and use their dot notation name in html file {{test}} {{things}}
+	// $scope.test = "yay it works";
+	// $scope.things = "this is amazing";
 
-	$scope.test = "yay it works";
-	$scope.things = "this is amazing";
+	$scope.tools = ['hammer', 'saw', 'spear', 'tomahawk', 'pitchfork', 'screwdriver'];
+	
 
 
 
