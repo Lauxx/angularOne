@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="firstApp">
+<!-- associating all of your other files with your index file; angular directive -->
+	<head>
+		<title>My Frist Angular App</title>
+		
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	
+	</head>
+	<body ng-controller="mainControl">
+<!-- linking your controller from mainControl -->
+	<input type="text" ng-model="test">
+<!-- now have input field that updates test variable -->
+	{{ test }}
+	{{things}}
+
+
+		
+	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<!-- requiring angular script tags and js files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="mainControl.js"></script>
+	<script src="mainServe.js"></script>
+	</body>
+</html>
