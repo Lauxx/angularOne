@@ -4,6 +4,8 @@ angular.module("firstApp").service('mainServe', function($http){
 
 	this.tools = [{ name: 'hammer', description: 'Pink with sparkles, hits nails'}, {name: 'spear', description: "Wooden and stabs things"}, {name: 'tomahawk', description: 'For bludgeon'}];
 
+
+//calling in $http from above allows us to make api requests, works like an ajax call
 	this.getServeThings = function(){
 		return $http({
 			method: 'GET', 
