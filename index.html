@@ -16,9 +16,10 @@
 		{{things}} -->
 		<div ng-repeat="tool in tools">
 <!-- tool = variable we have created in html; referencing tools = from mainControl; call in our created html variable to invoke -->
-			<h3>Name of Tool</h3>
-			<li>{{tool}}</li>
-			<p>This tool is awesome, especially for angry mobs</p>
+			<h3>Name of Tool: {{tool.name}}</h3>
+			<p>Description: {{tool.description}}</p>
+			<!-- <li>{{tool}}</li>
+			<p>This tool is awesome, especially for angry mobs</p> -->
 		</div>
 
 		

@@ -3,8 +3,9 @@ angular.module("firstApp").controller("mainControl", function($scope){
 	// $scope.test = "yay it works";
 	// $scope.things = "this is amazing";
 
-	$scope.tools = ['hammer', 'saw', 'spear', 'tomahawk', 'pitchfork', 'screwdriver'];
-	
+	// $scope.tools = ['hammer', 'saw', 'spear', 'tomahawk', 'pitchfork', 'screwdriver'];
+
+	$scope.tools = [{ name: 'hammer', description: 'Pink with sparkles, hits nails'}, {name: 'spear', description: "Wooden and stabs things"}, {name: 'tomahawk', description: 'For bludgeon'}];
 
 
 
