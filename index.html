@@ -3,10 +3,8 @@
 <!-- associating all of your other files with your index file; angular directive -->
 	<head>
 		<title>My Frist Angular App</title>
-		
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="main.css">
-	
 	</head>
 	<body ng-controller="mainControl">
 <!-- ng- = angular directive -->
@@ -15,6 +13,10 @@
 <!-- now have input field that updates test variable -->
 <!-- 	{{ test }}
 		{{things}} -->
+
+
+
+
 		<div ng-repeat="tool in tools">
 <!-- tool = variable we have created in html; referencing tools = from mainControl; call in our created html variable to invoke -->
 			<h3>Name of Tool: {{tool.name}}</h3>
@@ -23,6 +25,18 @@
 			<p>This tool is awesome, especially for angry mobs</p> -->
 		</div>
 
+
+		
+
+
+		<button type="button" ng-click="getThings()">Click to GET</button>
+<!-- on this click I want something to happen here run getThings() function-->
+
+
+		<div ng-repeat="giphy in things">
+			<img src={{giphy.images.fixed_height.url}} >
+		</div>
+<!-- giphy = variable we declared; look in $scope.things for my data, called in via things from mainControl	 -->	
 		
 	<script src="https://code.jquery.com/jquery-2.2.0.js"></script>
 	<!-- requiring angular script tags and js files -->
